@@ -1,23 +1,31 @@
 .container {
-    text-align: center;
-    margin-top: 50px;
-}
-
-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .conversation-box {
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button {
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-p {
-    font-size: 18px;
-    margin: 10px;
-}
+    margin-top: 10px;
+  }
+  
+  .user-message {
+    color: blue;
+  }
+  
+  .bot-message {
+    color: green;
+  }
+  
